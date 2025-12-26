@@ -14,3 +14,10 @@ export const Button = ({ variant = "primary", className, children, ...props }: B
     {children}
   </button>
 }
+
+
+export const SelectButton = (
+  { children, ...props }: ButtonProps
+) => {
+  return <button className="text-preset-5 text-white border-2 border-neutral-500 rounded-8 py-1.5 px-2.5 hover:border-blue-400 hover:text-blue-400 active:border-blue-400 active:text-blue-400 focus:ring-1 focus:ring-blue-400 bg-neutral-900" {...props}>{children}</button>
+}
