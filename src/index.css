@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+  --color-neutral-900: rgb(18 18 18);
+  --color-neutral-800: rgb(38 38 38);
+  --color-neutral-500: rgb(113 113 120);
+  --color-neutral-400: rgb(148 148 151);
+  --color-neutral-0: rgb(225 225 225);
+
+  --color-blue-600: rgb(23 125 255);
+
+  --color-red-500: rgb(214 77 91);
+
+  --color-green-500: rgb(77 214 123);
+
+  --color-yellow-400: rgb(244 220 115);
+
+  /* fonts  */
+  --font-sora: "Sora Variable", sans-serif;
+
+  --spacing-0: 0;
+  --spacing-25: 2px;
+  --spacing-50: 4px;
+  --spacing-75: 6px;
+  --spacing-100: 8px;
+  --spacing-125: 10px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+  --spacing-1200: 96px;
+  --spacing-1400: 112px;
+  --spacing-1600: 128px;
+  --spacing-1800: 140px;
+
+}
+
+@layer components {
+  .text-preset-1 {
+    font-family: var(--font-sora);
+    font-size: 40px;
+    line-height: 1.36;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+  }
+
+  .text-preset-1-mobile {
+    font-family: var(--font-sora);
+
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.32px;
+  }
+
+  .text-preset-1-regular {
+    font-family: var(--font-sora);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.36;
+    letter-spacing: 0.4px;
+  }
+
+  .text-preset-2 {
+    font-family: var(--font-sora);
+
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .text-preset-3 {
+    font-family: var(--font-sora);
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    font-weight: 400;
+  }
+
+  .text-preset-1-regular-mobile {
+    font-family: var(--font-sora);
+    font-size: 32px;
+    line-height: 1.36;
+    letter-spacing: 0.4px;
+  }
+
+  .text-preset-3-mobile {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: var(--font-sora);
+    letter-spacing: -0.48px;
+  }
+
+  .text-preset-3-semi-bold {
+    font-family: var(--font-sora);
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .text-preset-4 {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    font-family: var(--font-sora);
+  }
+
+  .text-preset-5 {
+    font-family: var(--font-sora);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.48px;
+  }
+
+  .text-preset-6 {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: var(--font-sora);
+  }
+}
