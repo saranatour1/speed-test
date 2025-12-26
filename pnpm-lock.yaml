@@ -17,12 +17,18 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(rolldown-vite@7.2.5(@types/node@24.10.4)(jiti@2.6.1))
+      '@tanstack/react-db':
+        specifier: ^0.1.60
+        version: 0.1.60(react@19.2.3)(typescript@5.9.3)
       react:
         specifier: ^19.2.0
         version: 19.2.3
       react-dom:
         specifier: ^19.2.0
         version: 19.2.3(react@19.2.3)
+      tailwind-merge:
+        specifier: ^3.4.0
+        version: 3.4.0
       tailwindcss:
         specifier: ^4.1.18
         version: 4.1.18
@@ -314,6 +320,9 @@ packages:
   '@rolldown/pluginutils@1.0.0-beta.50':
     resolution: {integrity: sha512-5e76wQiQVeL1ICOZVUg4LSOVYg9jyhGCin+icYozhsUzM+fHE7kddi1bdiE0jwVqTfkjba3jUFbEkoC9WkdvyA==}
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@swc/core-darwin-arm64@1.15.7':
     resolution: {integrity: sha512-+hNVUfezUid7LeSHqnhoC6Gh3BROABxjlDNInuZ/fie1RUxaEX4qzDwdTgozJELgHhvYxyPIg1ro8ibnKtgO4g==}
     engines: {node: '>=10'}
@@ -478,6 +487,25 @@ packages:
     resolution: {integrity: sha512-jVA+/UpKL1vRLg6Hkao5jldawNmRo7mQYrZtNHMIVpLfLhDml5nMRUo/8MwoX2vNXvnaXNNMedrMfMugAVX1nA==}
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7
+
+  '@tanstack/db-ivm@0.1.14':
+    resolution: {integrity: sha512-GluhFsd/Z1E/MZTf60l9dZpKNpmdxtV4izPRnj1RK6TYrhC9LMndN+ywk1VDFBrjtBq/CTShz4CilECLwVlTGg==}
+    peerDependencies:
+      typescript: '>=4.7'
+
+  '@tanstack/db@0.5.16':
+    resolution: {integrity: sha512-V4oCsGlighwgKGWldw1umaXaVYiDR0sK/1fCWictrx2lqxqmBMUEfmNtWnt0CFJXEbyRA/LF8TyFn1ooXtyZ3w==}
+    peerDependencies:
+      typescript: '>=4.7'
+
+  '@tanstack/pacer-lite@0.1.1':
+    resolution: {integrity: sha512-y/xtNPNt/YeyoVxE/JCx+T7yjEzpezmbb+toK8DDD1P4m7Kzs5YR956+7OKexG3f8aXgC3rLZl7b1V+yNUSy5w==}
+    engines: {node: '>=18'}
+
+  '@tanstack/react-db@0.1.60':
+    resolution: {integrity: sha512-Pz3pwH4vgRxlS/L3+BszINjNlIUXahJ6EqSEsYBMBT19G36GzTzyd5Qq98JaOXuu8V0dkiFWEoyEoTv3BiHcrg==}
+    peerDependencies:
+      react: '>=16.8.0'
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -749,6 +777,10 @@ packages:
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
+
+  fractional-indexing@3.2.0:
+    resolution: {integrity: sha512-PcOxmqwYCW7O2ovKRU8OoQQj2yqTfEB/yeTYk4gPid6dN5ODRfU1hXd9tTVZzax/0NkO7AxpHykvZnT1aYp/BQ==}
+    engines: {node: ^14.13.1 || >=16.0.0}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -1073,6 +1105,9 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
+  sorted-btree@1.8.1:
+    resolution: {integrity: sha512-395+XIP+wqNn3USkFSrNz7G3Ss/MXlZEqesxvzCRFwL14h6e8LukDHdLBePn5pwbm5OQ9vGu8mDyz2lLDIqamQ==}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -1084,6 +1119,9 @@ packages:
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
+
+  tailwind-merge@3.4.0:
+    resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
 
   tailwindcss@4.1.18:
     resolution: {integrity: sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw==}
@@ -1132,6 +1170,11 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -1413,6 +1456,8 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-beta.50': {}
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@swc/core-darwin-arm64@1.15.7':
     optional: true
 
@@ -1532,6 +1577,29 @@ snapshots:
       '@tailwindcss/oxide': 4.1.18
       tailwindcss: 4.1.18
       vite: rolldown-vite@7.2.5(@types/node@24.10.4)(jiti@2.6.1)
+
+  '@tanstack/db-ivm@0.1.14(typescript@5.9.3)':
+    dependencies:
+      fractional-indexing: 3.2.0
+      sorted-btree: 1.8.1
+      typescript: 5.9.3
+
+  '@tanstack/db@0.5.16(typescript@5.9.3)':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      '@tanstack/db-ivm': 0.1.14(typescript@5.9.3)
+      '@tanstack/pacer-lite': 0.1.1
+      typescript: 5.9.3
+
+  '@tanstack/pacer-lite@0.1.1': {}
+
+  '@tanstack/react-db@0.1.60(react@19.2.3)(typescript@5.9.3)':
+    dependencies:
+      '@tanstack/db': 0.5.16(typescript@5.9.3)
+      react: 19.2.3
+      use-sync-external-store: 1.6.0(react@19.2.3)
+    transitivePeerDependencies:
+      - typescript
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -1848,6 +1916,8 @@ snapshots:
 
   flatted@3.3.3: {}
 
+  fractional-indexing@3.2.0: {}
+
   fsevents@2.3.3:
     optional: true
 
@@ -2090,6 +2160,8 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
+  sorted-btree@1.8.1: {}
+
   source-map-js@1.2.1: {}
 
   strip-json-comments@3.1.1: {}
@@ -2097,6 +2169,8 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  tailwind-merge@3.4.0: {}
 
   tailwindcss@4.1.18: {}
 
@@ -2142,6 +2216,10 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  use-sync-external-store@1.6.0(react@19.2.3):
+    dependencies:
+      react: 19.2.3
 
   which@2.0.2:
     dependencies:
