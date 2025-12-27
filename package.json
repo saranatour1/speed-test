@@ -12,6 +12,9 @@
   "dependencies": {
     "@fontsource-variable/sora": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/db": "^0.5.16",
+    "@tanstack/query-core": "^5.90.12",
+    "@tanstack/query-db-collection": "^1.0.12",
     "@tanstack/react-db": "^0.1.60",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
